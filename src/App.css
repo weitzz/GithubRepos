@@ -10,7 +10,7 @@ body {
 
 header {
   text-align: center;
-  background-color:  #ff5733 ;
+  background-color:  #338bff ;
   width: 100%;
   height: 70px;
   margin-bottom: 20px;
@@ -27,7 +27,7 @@ header {
 }
 
 .formContainer {
-  margin: auto;
+  margin:  auto;
   text-align: center;
 }
 
@@ -47,7 +47,7 @@ header {
   height: 42px;
   padding: 10px;
   margin-left: 10px;
-  background:  #ff5733 ;
+  background:  #338bff ;
   color: #fff;
   border: 0;
   font-size: 20px;
@@ -57,12 +57,12 @@ header {
 }
 
 .repoListContainer {
-  /* background: # ; */
   display: flex;
   padding: 30px;
   width: 100%;
   height: 100%;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .repoItemContainer {
@@ -76,20 +76,37 @@ header {
   margin: 10px;
   border-radius: 5px;
   box-shadow: 3px 3px 10px #ddd;
+  position: relative;
+}
+.verticalLine{
+  width: 4px;
+  height: 90%;
+  bottom: 5px;
+  border-radius: 4px;
+  position: absolute;
+  background-color: #338bff;
+  left: 1%;
+}
+
+.repoItemContainer a{
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
+  color: #444;
+}
+.repoItemContainer h2{
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #151515;
 }
 
 .repoItemContainer > span {
   font-size: 14px;
   font-weight: normal;
-  color: #000;
+  color: #444;
 }
 
-.repoItemContainer > span:first-child {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 8px;
-}
 
 /* SPINNER */
 

@@ -42,7 +42,7 @@ class App extends Component{
     const {user,repos,error,loading} = this.state;
     return(
       <div className ='App'>
-      <Header/>
+      <Header repos={repos}/>
       <Form
         changeUser={this.changeUser}
         user ={user}
